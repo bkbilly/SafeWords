@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Safe Words</title>
+	<link rel="icon" sizes="192x192" href="icon.png">
+	<script src="jquery.js"></script>
+	<link rel="stylesheet" href="main.css">
+	<script type="text/javascript" src="myjs.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<!-- <div id="safewordsLeft"></div> -->
+		<h1 class="center">Safe Word Lists</h3>
+		<div class="center">
+			<div class="tooltip">
+				<input type="text" id="safewordsLeft" readonly>
+				<span class="tooltiptext">safewords left</span>
+			</div>
+			<button onclick="getSafeWord();">Get Safe Word</button>
+			<div class="tooltip">
+				<input type="text" id="firstsafeword" readonly>
+				<span class="tooltiptext">First safeword</span>
+			</div>
+		</div>
+		<hr>
+		<div class="center">
+			<textarea id="newsafewords" placeholder="write your new safewords" ></textarea>
+			<br>
+			<button onclick="uploadSafeWords();">Upload</button>
+			<button style="background-color: #AF4C50;" onclick="clearSafeWords();">Delete all</button>
+		</div>
+	</div>
+</body>
+</html>

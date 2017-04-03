@@ -1,0 +1,117 @@
+/*Tooltip*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    width: 120px;
+    top: 100%;
+    left: 50%; 
+    margin-left: -60px;
+
+    /* Position the tooltip */
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.8s ease 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+/*hr*/
+hr { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #f0f0f0, #BBB, #f0f0f0, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #f0f0f0, #BBB, #f0f0f0, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #f0f0f0, #BBB, #f0f0f0, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #f0f0f0, #BBB, #f0f0f0, #f0f0f0); 
+}
+
+/* Text Area */
+textarea {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+  border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+  border-image: none;
+  border-radius: 6px;
+  border-style: none solid solid none;
+  border-width: medium 1px 1px medium;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+  color: #555555;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1em;
+  padding: 5px 8px;
+  height: 50px;
+  width: 150px;
+  transition: background-color 0.8s, height 0.1s ease 0.2s;
+  resize: none;
+  text-align: center;
+}
+
+
+textarea:focus {
+  background: none repeat scroll 0 0 #FFFFFF;
+  outline-width: 0;
+  height: 100px;
+
+}
+/**/
+.container{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+/* ----------------- */
+body{
+	padding: 0;
+	margin: 0;
+	line-height: 1.125em;
+  background: #F0F0F0;
+}
+
+
+/* input */
+input[type=text] {
+	padding: 12px;
+	border: 2px solid #ccc; 
+	border-radius: 9px;
+	font-size: 16px;
+	width: 100px;
+  text-align: center;
+}
+
+
+/* Button */
+button {
+    background-color: #4C50AF;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    /*background-color: #f44336;*/
+}
+
+#safewordsLeft {
+  width: 50px;
+}
